@@ -15,16 +15,13 @@
 ## 输出
 输出p1到p2的距离
 
-在C++中，输出指定精度的参考代码如下：
+在Java中，输出指定精度的参考代码如下：
 
-```C++
-#include <iostream>
-#include <iomanip> //必须包含这个头文件
-using namespace std;
-void main( )
+```Java
+public static void main(String[] args)
 { 
   double a =3.141596;
-  cout<<fixed<<setprecision(3)<<a<<endl;  //输出小数点后3位
+  System.out.println("%,.3f", a);  //输出小数点后3位
 }
 ```
 
@@ -62,12 +59,12 @@ public:
     double distanceToAnotherPoint(Point &p);
 };
 
-// 无参构造的类外实现
+// 无参构造函数
 Point::Point() {
     x = y = 0;
 }
 
-// 有参构造的类外实现
+// 有参构造函数
 Point::Point(double x_value, double y_value) {
     x = x_value;
     y = y_value;
